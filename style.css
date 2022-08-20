@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+    --green-clr: #219150;
+    --yellow: #f5bf23;
+    --black: #111;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .15);
+    --border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    transition: .4s linear;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow); background: #fff;
+    padding: .7rem 8%; position: sticky; top: 0; z-index: 1000;
+    right: 0; left: 0;
+}
+
+.navbar .logo i {
+    color: var(--green-clr); font-size: 1.6rem;
+}
+.navbar .logo{
+    font-size: 1.4rem; font-weight: bold;
+    color: var(--black);
+}
+.navbar .nav-link{
+    font-size: 1.1rem; color: var(--black);
+}
+
+.navbar .icons i, .fa-bars{
+    font-size: 1.6rem;
+}
+
+/* ------------home section---------------- */
+
+.home{
+    padding: 0;
+}
+
+.home .row{
+    height: 100vh; width: 100vw; padding: 1rem 8%;
+    /* background: url(images/home-bg-1.jpg); */
+    background-size: cover !important; background-position: center !important;
+}
+.home .row .content span{
+    font-size: 2.7rem;
+}
+.home .row .content h1{
+    font-size: 3.5rem; color: var(--green-clr);
+    text-transform: uppercase; font-weight: bold;
+}
+.home .row .content p{
+    font-size: .9rem; line-height: 2.2;
+}
+.btn{
+    border: 2px solid var(--black);
+    padding: .6rem 2rem; color: var(--black); background: transparent;
+    border-radius: 0;
+}
+
+.home .row .content .btn:hover{
+    background: var(--black); color: var(--white);
+}
+
+/* ------------idea section starts--------------- */
+
+.idea{
+    padding: 3rem 8%; text-align: center;
+}
+
+.idea .row .box {
+    padding: 0 2rem;
+}
+.idea .row .box img{
+    width: 84%;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+.idea .row .box h3{
+    color: var(--green-clr); font-size: 1.2rem; font-weight: bold;
+}
+.idea .row .box p{
+    line-height: 2.2; font-size: .9rem; 
+}
+
+.heading{
+    font-size: 2.5rem; font-weight: bold; padding: 2rem 0;
+    padding-top: 0;
+}
+
+/* ---------------about section--------------------- */
+
+.about{
+    padding: 3rem 8%;
+    background: var(--light-bg);
+}
+.about .image img{
+    -webkit-box-shadow: 2rem 2rem 0 rgb(0 0 0 / 10%);
+    box-shadow: 2rem 2rem 0 rgb(0 0 0 / 10%);
+    margin-bottom: 3rem;
+}
+
+.about h3{
+    color: var(--green-clr); font-weight: bold; 
+    font-size: 1.8rem;
+}
+.about p{
+    line-height: 2.2; font-size: .95rem;
+    padding-bottom: .5rem;
+}
+
+/* ----------------products section--------------- */
+ 
+.product{
+    padding: 3rem 8%; text-align: center;
+}
+
+.product .box{
+    text-align: center; border: 2px solid var(--black);
+}
+
+.product .box h3{
+    margin-top: 1rem;
+    font-size: 1.3rem; font-weight: bold;
+}
+.price{
+    color: var(--green-clr); font-size: 1.4rem; line-height: 1.2;
+    margin: 0;
+}
+
+.product .box i{
+    margin: 1rem 0;
+}
+
+.product .col-lg-3{
+    max-width: 100%;
+}
+
+/* -------------packages section--------------- */
+
+.packages{
+    padding: 3rem 8%;
+    background: var(--light-bg);
+}
+
+.packages .box{
+    padding: 1.3rem; border-radius: .3rem; border: 2px solid var(--black);
+    text-align: center; margin-bottom: 1.5rem;
+    background: var(--white);
+}
+.packages .box .image{
+    height: 14rem;
+} 
+.packages img{
+    border-radius: .3rem;
+}
+.packages .box h3{
+    font-size: 1.2rem; font-weight: bold;
+}
+
+.packages .box p.para{
+    font-size: .9rem; line-height: 2.2;
+}
+
+/* ------------review section------------------ */
+
+.reviews{
+    padding: 3rem 8%;
+}
+.reviews .box p{
+    background: var(--light-bg); line-height: 2.2; 
+    font-style: italic; padding: 1rem; border-radius: .3rem;
+}
+.reviews .box .flex img{
+    width: 5rem;
+}
+
+.reviews .box .flex h3{
+    padding: 0; margin: 0; font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.reviews .box .flex p{
+    padding: 0; background: none; font-style: normal;
+    color: var(--green-clr); font-size: .9rem;
+    margin: 0;
+}
+
+/* -----------------offer section--------------- */
+
+.offer{
+    padding: 3rem 8%;
+    background: var(--light-bg);
+}
+
+.offer .box{
+    background: var(--white);
+    padding: 1.5rem; border-radius: .3rem; 
+    border: 2px solid black;
+    text-align: center; margin-bottom: 1.5rem;
+}
+
+.offer .box img{
+    width: 6rem; margin-bottom: .8rem;
+}
+
+.offer .box h3{
+    font-size: 1.2rem; color: var(--green-clr);
+    font-weight: bold;
+}
+.offer .box p{
+    font-size: .9rem; line-height: 2.2rem;
+}
+
+/* ---------------post container------------------- */
+
+.post{
+    padding: 3rem 8%; text-align: center;
+}
+
+.post .box img{
+    width: 100%; border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+.post .box h3{
+    font-size: 1.2rem; font-weight: bold; 
+}
+.post .box p{
+    font-size: .9rem; line-height: 2.2;
+}
+
+.post .flex{
+    display: flex; background: var(--black); padding: .6rem 1rem;
+    border-radius: .3rem; color: var(--white); align-items: center;
+    justify-content: center;
+}
+.post .flex i{
+    color: var(--green-clr); font-size: 1.4rem;
+    margin-righ: .5rem;
+}
